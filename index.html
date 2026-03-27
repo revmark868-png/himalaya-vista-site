@@ -73,49 +73,30 @@
     .brand-lockup {
       display: inline-flex;
       align-items: center;
-      gap: 14px;
-      padding: 12px 18px;
-      border-radius: 20px;
-      background: linear-gradient(145deg, rgba(110,168,255,0.14), rgba(142,240,208,0.08));
-      border: 1px solid rgba(255,255,255,0.12);
+      justify-content: center;
+      padding: 10px 18px;
+      border-radius: 22px;
+      background: linear-gradient(145deg, rgba(110,168,255,0.16), rgba(142,240,208,0.08));
+      border: 1px solid rgba(255,255,255,0.14);
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.10), 0 18px 36px rgba(0, 0, 0, 0.24);
+      min-height: 72px;
     }
     .brand-mark {
-      width: 72px;
-      height: 56px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      border-radius: 16px;
-      background: rgba(7, 16, 29, 0.42);
-      border: 1px solid rgba(255,255,255,0.10);
       flex-shrink: 0;
-      overflow: hidden;
+      overflow: visible;
     }
     .brand-mark svg {
-      width: 52px;
-      height: 38px;
+      width: 320px;
+      height: 64px;
       display: block;
     }
-    .brand-text {
-      display: flex;
-      flex-direction: column;
-      line-height: 1;
-      justify-content: center;
-    }
-    .brand-title {
-      font-size: 26px;
-      font-weight: 800;
-      letter-spacing: 0.015em;
-    }
+    .brand-text,
+    .brand-title,
     .brand small {
-      display: block;
-      font-weight: 600;
-      color: var(--muted);
-      font-size: 11px;
-      margin-top: 8px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
+      display: none;
     }
     .nav-links {
       display: flex;
@@ -453,24 +434,12 @@
         padding: 16px 18px;
       }
       .brand-lockup {
-        padding: 10px 14px;
-        gap: 10px;
-      }
-      .brand-mark {
-        width: 58px;
-        height: 46px;
-        border-radius: 14px;
+        padding: 9px 12px;
+        min-height: 60px;
       }
       .brand-mark svg {
-        width: 40px;
-        height: 30px;
-      }
-      .brand-title {
-        font-size: 20px;
-      }
-      .brand small {
-        font-size: 10px;
-        letter-spacing: 0.08em;
+        width: 220px;
+        height: 46px;
       }
       .hero-copy,
       .section-card,
@@ -490,21 +459,19 @@
       <div class="brand" aria-label="Himalaya Vista">
         <div class="brand-lockup">
           <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 58L32 26L48 44L66 18L92 58" stroke="url(#hvGradientWide)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M18 60H102" stroke="rgba(238,244,255,0.55)" stroke-width="3" stroke-linecap="round"/>
-              <path d="M34 58L48 40L56 48L69 31L84 58" stroke="rgba(238,244,255,0.38)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg viewBox="0 0 520 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="516" height="106" rx="26" fill="rgba(7,16,29,0.38)" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+              <path d="M26 78L68 28L98 58L132 20L178 78" stroke="url(#hvGradientWide)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M36 82H190" stroke="rgba(238,244,255,0.40)" stroke-width="3.5" stroke-linecap="round"/>
+              <text x="208" y="58" fill="#EEF4FF" font-size="34" font-weight="800" letter-spacing="0.8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">Himalaya Vista</text>
+              <text x="208" y="84" fill="#B3C0DD" font-size="13" font-weight="600" letter-spacing="3" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">SUPPLY CHAIN CONSULTING</text>
               <defs>
-                <linearGradient id="hvGradientWide" x1="10" y1="18" x2="92" y2="60" gradientUnits="userSpaceOnUse">
+                <linearGradient id="hvGradientWide" x1="26" y1="20" x2="178" y2="82" gradientUnits="userSpaceOnUse">
                   <stop stop-color="#8EF0D0"/>
                   <stop offset="1" stop-color="#6EA8FF"/>
                 </linearGradient>
               </defs>
             </svg>
-          </span>
-          <span class="brand-text">
-            <span class="brand-title">Himalaya Vista</span>
-            <small>Supply Chain Consulting</small>
           </span>
         </div>
       </div>
