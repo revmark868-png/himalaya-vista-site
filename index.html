@@ -372,6 +372,54 @@
       gap: 12px;
       margin-top: 18px;
     }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 22px;
+      align-items: stretch;
+      margin-top: 18px;
+    }
+    .contact-card,
+    .qr-card {
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.03);
+      border-radius: 22px;
+      padding: 22px;
+    }
+    .contact-card h3,
+    .qr-card h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+    .contact-card p,
+    .qr-card p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+    .contact-note {
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 12px;
+    }
+    .qr-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      margin-top: 10px;
+    }
+    .qr-box img {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      display: block;
+      border-radius: 14px;
+      background: white;
+      padding: 10px;
+    }
     footer {
       padding: 8px 0 42px;
       text-align: center;
@@ -421,6 +469,9 @@
       .band-copy,
       .cta {
         padding: 24px;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -603,9 +654,23 @@
       <div class="wrap glass cta" id="contact">
         <h2>If You Are Evaluating Products, Suppliers, or Supply Chain Options, This Can Be the First Conversation</h2>
         <p>We support businesses that need clearer direction on product opportunities, supplier selection, and supply chain decisions—especially in ecommerce and HVAC-related categories.</p>
-        <div class="cta-actions">
-          <a class="btn btn-primary" href="#">Contact Details to Be Added Later</a>
-          <a class="btn btn-secondary" href="#services">Review Services Again</a>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Connect on WhatsApp</h3>
+            <p>You can reach out directly through WhatsApp for an initial conversation about sourcing, suppliers, or supply chain support.</p>
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="https://wa.me/" target="_blank" rel="noopener noreferrer">Open WhatsApp</a>
+              <a class="btn btn-secondary" href="#services">Review Services Again</a>
+            </div>
+            <div class="contact-note">We can later replace this with your direct WhatsApp number or a prefilled message link.</div>
+          </div>
+          <div class="qr-card">
+            <h3>Scan to Add on WhatsApp</h3>
+            <p>Prefer scanning? Use the QR code below to connect quickly from your phone.</p>
+            <div class="qr-box">
+              <img src="./whatsapp-qr.png" alt="WhatsApp QR Code" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
