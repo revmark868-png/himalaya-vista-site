@@ -67,36 +67,26 @@
     }
     .brand {
       display: inline-flex;
-      align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
       min-width: 0;
+      line-height: 1;
     }
-    .brand-lockup {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 18px;
-      border-radius: 22px;
-      background: linear-gradient(145deg, rgba(110,168,255,0.16), rgba(142,240,208,0.08));
-      border: 1px solid rgba(255,255,255,0.14);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.10), 0 18px 36px rgba(0, 0, 0, 0.24);
-      min-height: 72px;
+    .brand-title {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      color: var(--text);
     }
-    .brand-mark {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      overflow: visible;
-    }
-    .brand-mark svg {
-      width: 320px;
-      height: 64px;
-      display: block;
-    }
-    .brand-text,
-    .brand-title,
     .brand small {
-      display: none;
+      display: block;
+      margin-top: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
     }
     .nav-links {
       display: flex;
@@ -434,13 +424,12 @@
         align-items: flex-start;
         padding: 16px 18px;
       }
-      .brand-lockup {
-        padding: 9px 12px;
-        min-height: 60px;
+      .brand-title {
+        font-size: 22px;
       }
-      .brand-mark svg {
-        width: 220px;
-        height: 46px;
+      .brand small {
+        font-size: 10px;
+        letter-spacing: 0.10em;
       }
       .hero-copy,
       .section-card,
@@ -458,23 +447,8 @@
   <header class="nav">
     <div class="wrap nav-inner">
       <div class="brand" aria-label="Himalaya Vista">
-        <div class="brand-lockup">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 520 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="2" width="516" height="106" rx="26" fill="rgba(7,16,29,0.38)" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
-              <path d="M26 78L68 28L98 58L132 20L178 78" stroke="url(#hvGradientWide)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M36 82H190" stroke="rgba(238,244,255,0.40)" stroke-width="3.5" stroke-linecap="round"/>
-              <text x="208" y="58" fill="#EEF4FF" font-size="34" font-weight="800" letter-spacing="0.8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">Himalaya Vista</text>
-              <text x="208" y="84" fill="#B3C0DD" font-size="13" font-weight="600" letter-spacing="3" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">SUPPLY CHAIN CONSULTING</text>
-              <defs>
-                <linearGradient id="hvGradientWide" x1="26" y1="20" x2="178" y2="82" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#8EF0D0"/>
-                  <stop offset="1" stop-color="#6EA8FF"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </span>
-        </div>
+        <span class="brand-title">Himalaya Vista</span>
+        <small>Supply Chain Consulting</small>
       </div>
       <nav class="nav-links">
         <a href="#services">Services</a>
@@ -636,18 +610,15 @@
         <div class="contact-grid">
           <div class="contact-card">
             <h3>Contact Options</h3>
-            <p>If you would like to discuss sourcing, suppliers, or supply chain support, you can connect directly by scanning the WhatsApp QR code.</p>
+            <p>If you would like to discuss sourcing, suppliers, or supply chain support, WhatsApp contact can be added here once the final QR asset is ready.</p>
             <div class="cta-actions">
               <a class="btn btn-secondary" href="#services">Review Services Again</a>
             </div>
-            <div class="contact-note">Email contact can be added here later once it is ready.</div>
+            <div class="contact-note">Email contact can also be added here later once it is ready.</div>
           </div>
           <div class="qr-card">
-            <h3>Scan to Connect on WhatsApp</h3>
-            <p>Use the QR code below to start a direct WhatsApp conversation without displaying a phone number on the site.</p>
-            <div class="qr-box">
-              <img src="./whatsapp-qr.png" alt="WhatsApp QR Code" />
-            </div>
+            <h3>WhatsApp Contact</h3>
+            <p>The QR contact block is being refreshed and will be added back once the final image asset is ready for production use.</p>
           </div>
         </div>
       </div>
