@@ -67,11 +67,29 @@
     }
     .brand {
       display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      justify-content: center;
+      min-width: 0;
+      line-height: 1;
+    }
+    .brand-mark {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      object-fit: cover;
+      display: block;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.04);
+      flex: 0 0 auto;
+    }
+    .brand-copy {
+      display: inline-flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
       min-width: 0;
-      line-height: 1;
     }
     .brand-title {
       font-size: 26px;
@@ -424,6 +442,11 @@
         align-items: flex-start;
         padding: 16px 18px;
       }
+      .brand-mark {
+        width: 54px;
+        height: 54px;
+        border-radius: 16px;
+      }
       .brand-title {
         font-size: 22px;
       }
@@ -447,8 +470,11 @@
   <header class="nav">
     <div class="wrap nav-inner">
       <div class="brand" aria-label="Himalaya Vista">
-        <span class="brand-title">Himalaya Vista</span>
-        <small>Supply Chain Consulting</small>
+        <img class="brand-mark" src="logo-selected.png" alt="Himalaya Vista logo" />
+        <div class="brand-copy">
+          <span class="brand-title">Himalaya Vista</span>
+          <small>Supply Chain Consulting</small>
+        </div>
       </div>
       <nav class="nav-links">
         <a href="#services">Services</a>
@@ -610,11 +636,12 @@
         <div class="contact-grid">
           <div class="contact-card">
             <h3>Contact Options</h3>
-            <p>If you would like to discuss sourcing, suppliers, or supply chain support, WhatsApp contact can be added here once the final QR asset is ready.</p>
+            <p>If you would like to discuss sourcing, suppliers, or supply chain support, you can reach out by email now, and WhatsApp contact can be added here once the final QR asset is ready.</p>
             <div class="cta-actions">
+              <a class="btn btn-primary" href="mailto:mark@himalaya-vista.com">Email Mark</a>
               <a class="btn btn-secondary" href="#services">Review Services Again</a>
             </div>
-            <div class="contact-note">Email contact can also be added here later once it is ready.</div>
+            <div class="contact-note">Email: <a href="mailto:mark@himalaya-vista.com">mark@himalaya-vista.com</a></div>
           </div>
           <div class="qr-card">
             <h3>WhatsApp Contact</h3>
